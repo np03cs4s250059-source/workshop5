@@ -12,10 +12,10 @@ if (!file_exists("students.txt")) {
         echo "<p>";
         echo "<strong>Name:</strong> $name<br>";
         echo "<strong>Email:</strong> $email<br>";
-        echo "<strong>Skills:</strong> ";
-        print_r($skillsArray);
+        echo "<strong>Skills:</strong> " . implode(", ", $skillsArray);
         echo "</p><hr>";
     }
 }
+
 
 require "footer.php";
